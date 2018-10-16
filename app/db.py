@@ -8,3 +8,13 @@ class Database(object):
         self.user_emails_index = {}
         self.sales_details_index = {}
         self.products_name_index = {}
+    
+    def drop(self):
+        self.users = {}
+        self.products = {}
+        self.attendants = {}
+        self.user_emails_index = {}
+        self.sales_details_index = {}
+        self.products_name_index = {}
+        
+db = Database()
